@@ -1,0 +1,150 @@
+I need help creating a README file that can be used in the GitHub repository for this workspace. The file should be formatted as markdown. The README file needs to include the following sections: Project Title, Description, Table of Contents, Installation, Usage, Features, Configuration, and License.
+
+Generate a collection of project documentation files. Create or update the workspace README.md file for this repository. Create or update the UsageExamples.md file. Create or update the ChangeLog.md file. Include links between the documentation files, cross-reference classes and methods, and ensure consistency across the documents.
+
+dotnet prompt:
+================
+Create an Employee entity with username and password.
+Create a EmployeeController with POST method to authenticate an employee using username and password.
+Generate JWT token after successful authentication.
+Add middleware to validate JWT token on protected routes.
+Use entityframework core for database persistency.
+configure CORS policy to give access to the client url http://localhost:4200
+Place the classes in their respective folders to have layered based architecture.
+
+
+Angular prompt:
+===============
+Create a HomeComponent for displaying welcome message.
+homecomponent should be the starting component.
+
+configure route and provide the home page after jwt token provided post authentication using username and password.
+
+authentication is to be done using the api url http://localhost:5161/api/Employee/authenticate.
+
+
+
+
+
+
+
+======================================================================
+
+Fullstack  App (.NET/Python/Java)
+
+1) WEB API  ----> Backend----->Employee (login using username and password)
+	--Database SQL Server (EntityFrameworkCore for Repository layer)
+
+	cli:-
+		dotnet new webapi -n EmployeeAPIB2
+
+		dotnet run
+
+
+	vs code copilot :- /new create an dotnet core web api for employee
+
+
+
+2) Angular UI------>Front-end : http://localhost:4200
+
+install:
+-Nodejs: nodejs.org/download
+-NPM(Node Package Manager) comes with nodejs
+
+	to verify
+		node -v
+
+Angular CLI:-
+	npm install -g @angular/cli
+
+to verify:
+	ng version
+
+to create angular workspace:
+	ng new hello-world
+
+	cd hello-world
+	code .
+
+OR using copilot:
+	/new create an angular app name hello-world with version angular 22.
+
+To run angular app: from the app folder
+	ng serve -o or npm start 
+
+	
+
+
+
+
+
+
+
+
+
+Start as a Business Analyst:
+
+Prompt:
+Act as a Business Analyst.
+
+Convert the following requirement into a detailed user story with acceptance criteria:
+
+Requirement:
+Customer should be able to apply for a loan by entering income and requested amount.
+System should validate eligibility and store in application.
+
+
+
+1) Generate ASP.NET Core WEB API code for this user story:
+
+[PASET THE USER-STORY HERE]
+
+
+2) Structured Prompt(Power move): As a senior developer
+
+Create  .NET 8 WEB API for Loan Application with the following requirements:
+
+-Endpoint: POST /api/loan/apply
+-Input: customerId,income, loanAmount
+-Validate:
+	- income > 20000
+	- loanAmount<=3*income
+- User Clear Architecture:
+	-Controller
+	-Service Layer
+	-Repository Layer
+- Use EntityFramework Core
+- Save data to SQL Server
+- Return proper HTTP status codes
+
+
+Prompt for tester:
+
+Generate test cases for Loan Application API including:
+- Positive scenarios
+- Negative scenarios
+- Boundary cases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
